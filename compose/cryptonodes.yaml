@@ -31,12 +31,12 @@ services:
       - ../config/bitcoin.conf:/bitcoin/.bitcoin/bitcoin.conf
       - btc-data:/bitcoin
     expose:
-      - "18332"
-      - "18333"
+      - "8332"
+      - "8333"
     labels:
       traefik.enable: true
       traefik.frontend.rule: 'Host: btc.wb.local'
-      traefik.port: 18332
+      traefik.port: 8332
 
 volumes:
   eth-data:
