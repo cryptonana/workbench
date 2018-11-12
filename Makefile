@@ -21,8 +21,7 @@ config:
 build: config pull
 	$(COMPOSE) build peatio     \
 	                 barong     \
-	                 trading_ui \
-	                 integration
+	                 trading_ui
 
 geth:
 	@$(COMPOSE) up -d geth
